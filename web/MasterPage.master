@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register src="Control/NewsList.ascx" tagname="NewsList" tagprefix="uc1" %>
+<%@ Register src="Control/Messagebig.ascx" tagname="Messagebig" tagprefix="uc2" %>
+<%@ Register src="Control/Articlebig.ascx" tagname="Articlebig" tagprefix="uc3" %>
+
+<%@ Register src="Control/globallink.ascx" tagname="globallink" tagprefix="uc4" %>
+
+<%@ Register src="Control/Newsbig.ascx" tagname="Newsbig" tagprefix="uc5" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>作品</title>
+    <link href="css/devise.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.1-vsdoc.js"></script>
+<script type="text/javascript" src="js/jquery.floatDiv.js"></script>
+<script type="text/javascript">
+$(function(){
+		   var $man =$("#test");
+	$man.floatdiv({left:"0px",top:"50px"});
+	$man.hover(function(){
+						
+	   $(this).children("h2").hide().siblings().has("li").show('fast');
+	   
+	},function(){
+		$(this).children("ul").has("li").hide();
+		$(this).children("h2").show();
+		});
+	
+});
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="container">
+<div id="Banner"> </div>
+
+
+<uc4:globallink ID="globallink1" runat="server" />
+  
+ <div id="Design">
+     
+ <div id="sidebar">
+ 
+  
+  
+ 
+  
+ 
+  
+  
+ 
+  
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc3:Articlebig ID="Articlebig1" runat="server" />
+         <uc2:Messagebig ID="Messagebig1" runat="server" />
+     
+     <uc5:Newsbig ID="Newsbig1" runat="server" />
+     </asp:ContentPlaceHolder>
+ 
+  
+ </div>
+ 
+ 
+          <div id="subMian">
+          
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                  <uc1:NewsList ID="NewsList1" runat="server" />
+              </asp:ContentPlaceHolder>
+          
+          </div>
+  <div id="foot">
+    <ul>
+      <li class="link"><a href="About.aspx"title="关于本站">关于本站</a> |&nbsp; <a href="admin/News.aspx"title="About Duyibo">管理员</a> |&nbsp; <a href="Services.aspx"title="服务范围">服务范围</a> |&nbsp; <a href="img.aspx"title="广告服务">上传</a> |&nbsp; <a href="/Forjob/" title="招聘栏目">招聘栏目</a> |&nbsp; <a href="#" title="友情链接">友情链接</a> |&nbsp; <a href="#" title="隐私保护">隐私保护</a> |&nbsp; <a href="#" title="网站导航">网站导航</a></li>
+      <li class="line">2010 - 2011 </li>
+      
+  </ul>
+  </div>
+    
+     
+    
+ </div>
+  
+</div>
+<div id="test">
+<h2><img src="images/qq.gif" /></h2> 
+<ul>
+<li>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=623488217&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:623488217:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a>
+</li>
+<li></li>
+<li>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=623488217&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:623488217:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a>
+</li>
+
+</ul>
+</div>
+    </form>
+</body>
+</html>

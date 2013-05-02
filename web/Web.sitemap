@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="网站首页"  description="网站首页">
+      
+      
+      
+        
+        <siteMapNode url="~/admin/admin.aspx" title="管理员后台"  description="">
+          
+    　　<siteMapNode url="~/admin/News.aspx" title="新闻列表 "  description="新闻列表 "/>
+        <siteMapNode url="~/admin/NewsUpdate.aspx" title="新闻编缉 "  description="新闻编缉 ">
+        <siteMapNode url="~/admin/upnews.aspx" title="修改新闻 "  description="修改新闻  "/>
+        </siteMapNode>
+        <siteMapNode url="~/admin/NewsAdd.aspx" title="新闻添加 "  description="新闻添加  "/>
+
+          <siteMapNode url="~/admin/Article.aspx" title="日记列表 "  description="日记列表 "/>
+          <siteMapNode url="~/admin/ArticleUpdate.aspx" title="日记编缉 "  description="日记编缉 ">
+            <siteMapNode url="~/admin/upArticle.aspx" title="修改日记 "  description="修改日记  "/>
+          </siteMapNode>
+          <siteMapNode url="~/admin/ArticleAdd.aspx" title="日记添加 "  description="日记添加  "/>
+
+　　　　<siteMapNode url="~/admin/Design.aspx" title="作品列表 "  description="作品列表 "/>
+        <siteMapNode url="~/admin/DesignUpdate.aspx" title="作品编缉 "  description="作品编缉 ">
+          <siteMapNode url="~/admin/upDesign.aspx" title="修改作品 "  description="修改作品  "/>
+        </siteMapNode>
+        <siteMapNode url="~/admin/DesignAdd.aspx" title="作品添加 "  description="作品添加  "/>
+
+
+          
+          　<siteMapNode url="~/admin/Guestbook.aspx" title="留言列表 "  description="留言列表 ">
+            <siteMapNode url="~/admin/GuestbookReply.aspx" title="留言回复 "  description="留言回复  "/>
+          </siteMapNode>     
+        </siteMapNode>
+    </siteMapNode>
+</siteMap>

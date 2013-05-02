@@ -1,0 +1,46 @@
+某设计公司网站源码
+
+项目描述　
+个人的作品展示
+
+·项目实现了如下功能
+登录：只有管理员可登录　用户名：51aspx，密码：51aspx
+日志：发表一些好的文章，点击日记选项，显示所有日记，参看日记评论，发表日记评论。
+作品：作品管理、上传作品照片。
+
+·项目技术
+系统分为表示层、数据访问层、业务逻辑层 采用三层架构。
+系统统一采用DIV布局。采用html&defDiv+Css&defc#&def等技术。
+
+编程工具版本：
+vs2008
+ACCESS
+
+作者：cwt350582
+源码下载地址：http://www.51aspx.com/CV/designSite
+
+
+
+                ╭═══════════════╮
+                ║     Asp.net源码下载专业站    ║
+  ╭══════┤     http://www.51aspx.com    ├══════╮
+  ║            ║ 论坛:http://bbs.51aspx.com   ║            ║
+  ║            ╰═══════════════╯            ║
+　║                                                          ║
+　║51aspx声明：                                              ║
+  ║   1) 本站不保证所提供软件或程序的完整性和安全性。        ║
+  ║   2) 转载本站提供的资源请勿删除本说明文件。              ║
+  ║   3) 本站提供的程序均为网上搜集，如果该代码涉及或侵害到您║
+  ║      的版权请立即写信通知我们。                          ║
+  ║   4) 本站提供代码只可供研究使用，请在下载24小时内删除,   ║
+  ║      切勿用于商业用途，由此引起一切后果与本站无关。      ║
+  ║   5) 如果源码有升级或修补，我们会在本站进行，恕不另行通知║
+　║                                                          ║
+  ║           本站专注于Asp.net源码下载                      ║
+  ║           联系方式 : support@51aspx.com                  ║
+  ║    ╭───────────────────────╮    ║
+  ╰══┤  Asp.net源码网 http://www.51aspx.com         ├══╯
+        ╰───────────────────────╯
+友情提示:
+    一般数据库文件默认在DB_51aspx文件夹下
+    如果使用VS2005打开本站项目文件，建议打开前务必安装VS2005Sp1
